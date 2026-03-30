@@ -62,6 +62,7 @@ export default function ContactSection({withMap=false}: PropInterface) {
         }
         try {
             const res = await contactStoreAction(formData);
+            //console.log('CONTACT', res)
             const {status, message} = res;
             switch(status){
                 case 1:
@@ -69,6 +70,10 @@ export default function ContactSection({withMap=false}: PropInterface) {
                     resetData();
                     setIsSubmitting(false);
                     toast.success(message);
+                    return
+                case 0:
+                    toast.success(message);
+                    setIsSubmitting(false);
                     return
                 default:
                     toast.success('Something went wrong, please try again.');

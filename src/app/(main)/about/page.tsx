@@ -32,7 +32,7 @@ export async function generateMetadata(): Promise<Metadata> {
 
   if (!pageMeta?.data) {
     return {
-      title: 'About Us',
+      title: 'Celeste Energy - About Us',
       description: '',
     };
   }
