@@ -28,7 +28,7 @@ export async function generateMetadata(): Promise<Metadata> {
 
   if (!pageMeta?.data) {
     return {
-      title: 'Kegan Management Consulting - Home',
+      title: 'Celeste Energy - Home',
       description: '',
     };
   }
