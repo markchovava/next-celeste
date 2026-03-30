@@ -4,7 +4,7 @@ import { NoImage } from "@/_data/sample/NoImage"
 export const ServiceInfoData = {
     image: '/assets/img/banner/10.jpg',
     href: '/service',
-    title: 'Our Service',
+    title: 'Our Services',
     subtitle: 'What we do?',
     intro: <>
         <p className="mb-2">
