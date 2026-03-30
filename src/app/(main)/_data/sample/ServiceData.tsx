@@ -6,16 +6,14 @@ export const ServiceInfoData = {
     href: '/service',
     title: 'Our Services',
     subtitle: 'What we do?',
+    breif: `We specialize in solar  technology, Celeste Energy offers innovative products 
+            and services designed to meet the growing demand for clean, renewable energy. `,
     intro: <>
         <p className="mb-2">
-            We specialize in solar  technology, Celeste Energy offers innovative products 
-            and services designed to meet the growing demand for clean, renewable energy. 
-        </p>
-        <p className="mb-2">
-            We specialize in solar  technology, Celeste Energy offers innovative products 
-            and services designed to meet the growing demand for clean, renewable energy. 
-            We specialize in solar  technology, Celeste Energy offers innovative products 
-            and services designed to meet the growing demand for clean, renewable energy. 
+            At Celeste Energy, we are dedicated to harnessing the power of the sun to provide 
+            sustainable energy and water solutions that enhance quality of life. As a forward-thinking 
+            leader in renewable technology, we offer a comprehensive suite of innovative products and 
+            services designed to meet the growing global demand for clean energy.
         </p>
     </>,
     details: <></>,
