@@ -2,6 +2,7 @@
 import { motion, Variants } from "motion/react"
 import Title from '../titles/Title'
 import { ButtonPrimary } from "../buttons/ButtonPrimary"
+import Link from "next/link"
 
 const fadeUp: Variants = {
     hidden: { opacity: 0, y: 32 },
@@ -52,12 +53,13 @@ export default function BannerHero() {
                                 initial="hidden"
                                 whileInView="visible"
                                 viewport={{ once: true, amount: 0.3 }}
-                                custom={0.4}
-                            >
-                                <ButtonPrimary
-                                    title="View More"
-                                    css="text-lg py-3.5 px-9 text-white"
-                                />
+                                custom={0.4}>
+                                <Link href='/about'>
+                                    <ButtonPrimary
+                                        title="View More"
+                                        css="text-lg py-3.5 px-9 text-white"
+                                    />
+                                </Link>
                             </motion.div>
 
                         </div>
