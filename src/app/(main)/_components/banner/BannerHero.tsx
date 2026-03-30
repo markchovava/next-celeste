@@ -18,46 +18,53 @@ const fadeUp: Variants = {
 
 export default function BannerHero() {
     return (
-        <section className="h-130 w-full bg-linear-to-br from-blue-500 to-blue-950 text-white">
-            <div className="container__primary h-full flex flex-col items-start justify-center">
-                <div className="lg:w-[50%] w-[70%] h-full flex flex-col items-start justify-center">
+        <section style={{
+            backgroundImage: 'url("/assets/img/banner/02.jpg")',
+        }} className="h-130 relative w-full bg-fixed bg-center bg-cover bg-linear-to-br from-blue-500 to-blue-950 text-white">
+            <div className="top-0 left-0 w-full h-full absolute z-5 bg-linear-to-tr from-gray-950 to-90% to-transparent">
+                <div className="container__primary h-full flex flex-col items-start justify-center">
+                    <div className="relative lg:w-[50%] w-[70%] h-full flex flex-col items-start justify-center">
+                        {/* <div className="absolute z-5 bg-blue-900 opacity-20 w-full h-full"></div> */}
+                        <div className="absolute text-shadow-lg z-10 px-4 w-full h-full flex flex-col items-start justify-center">
+                            <motion.div
+                                variants={fadeUp}
+                                initial="hidden"
+                                whileInView="visible"
+                                className="text-shadow-lg"
+                                viewport={{ once: true, amount: 0.3 }}
+                                custom={0.1}>
+                                <Title name="Welcome to Celeste Energy" />
+                            </motion.div>
 
-                    <motion.div
-                        variants={fadeUp}
-                        initial="hidden"
-                        whileInView="visible"
-                        viewport={{ once: true, amount: 0.3 }}
-                        custom={0.1}
-                    >
-                        <Title name="Welcome to Celeste Energy" />
-                    </motion.div>
+                            <motion.p
+                                className="text-2xl font-light mb-6"
+                                variants={fadeUp}
+                                initial="hidden"
+                                whileInView="visible"
+                                viewport={{ once: true, amount: 0.3 }}
+                                custom={0.25}>
+                                We are dedicated to harnessing the power of the sun to provide sustainable
+                                energy solutions.
+                            </motion.p>
 
-                    <motion.p
-                        className="text-2xl font-light mb-4"
-                        variants={fadeUp}
-                        initial="hidden"
-                        whileInView="visible"
-                        viewport={{ once: true, amount: 0.3 }}
-                        custom={0.25}
-                    >
-                        We are dedicated to harnessing the power of the sun to provide sustainable
-                        energy solutions.
-                    </motion.p>
+                            <motion.div
+                                variants={fadeUp}
+                                initial="hidden"
+                                whileInView="visible"
+                                viewport={{ once: true, amount: 0.3 }}
+                                custom={0.4}
+                            >
+                                <ButtonPrimary
+                                    title="View More"
+                                    css="text-lg py-3.5 px-9 text-white"
+                                />
+                            </motion.div>
 
-                    <motion.div
-                        variants={fadeUp}
-                        initial="hidden"
-                        whileInView="visible"
-                        viewport={{ once: true, amount: 0.3 }}
-                        custom={0.4}
-                    >
-                        <ButtonPrimary
-                            title="View More"
-                            css="text-lg py-3.5 px-9 text-white"
-                        />
-                    </motion.div>
+                        </div>
 
+                    </div>
                 </div>
+
             </div>
         </section>
     )

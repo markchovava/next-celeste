@@ -4,8 +4,9 @@ export const AppInfoData = {
     address: '14 Mayo Place, Eastlea, Harare',
     email: 'sales@celeste.co.zw',
     about: {
-        image: '',
-        title: 'Who we are?',
+        image: '/assets/img/banner/08.jpg',
+        subtitle: 'Who we are?',
+        title: 'About Us',
         intro: <>
             Celeste Energy is a forward-thinking company 
             dedicated to harnessing the power of the sun to provide 
@@ -43,7 +44,7 @@ export const AppInfoData = {
         ]
     },
     mission: {
-        image: '',
+        image: '/assets/img/02.jpg',
         title: 'Our Mission',
         details: <>
             To provide accessible, reliable, and Mission sustainable energy 
@@ -52,7 +53,7 @@ export const AppInfoData = {
         </>
     },
     vision: {
-        image: '',
+        image: '/assets/img/03.jpg',
         title: 'Our Vision',
         details: <>
             To be the leading catalyst for clean energy adoption globally, ensuring 
@@ -60,7 +61,7 @@ export const AppInfoData = {
         </>,
     },
     social: {
-        image: '',
+        image: '/assets/img/04.jpg',
         title: 'Social Responsibility',
         details: <>
             Uplifting communities through Responsibility accessible energy and water.

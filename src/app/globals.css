@@ -13,7 +13,9 @@ html {
   @apply border-blue-800;
 }
 
-
+.bg__parallax{
+  @apply bg-fixed bg-bottom bg-cover;
+}
 .bg__secondary{
   @apply bg-blue-950;
 }

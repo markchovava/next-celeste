@@ -1,7 +1,5 @@
 "use client"
 
-import Link from "next/link"
-
 interface pInterface{
     image?: string
     name: string
@@ -23,12 +21,15 @@ export default function CardService({
                     src={image} 
                 />
             </figure>
-            <div className='px-3 pt-2 pb-3 h-18'>
-                <Link href={href}> 
+            <div className='px-3 pt-4 pb-3 h-16'>
+                <span className='text-xl border-transparent text-gray-700 pb-[0.5px] leading-0.5'>
+                    {name}
+                </span> 
+               {/*  <Link href={href}> 
                 <span className='text-xl border-transparent text-blue-900 hover:text-blue-700 hover:border-blue-700 ease-in-out transition-all duration-200 hover:border-b-2 pb-[0.5px] leading-0.5'>
                     {name}
                 </span> 
-                </Link>
+                </Link> */}
             </div>
         </div>
     )

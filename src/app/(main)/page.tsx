@@ -1,24 +1,11 @@
-import FooterDefault from "./_components/footers/FooterDefault";
-import HeaderDefault from "./_components/headers/HeaderDefault";
-import IntroSection from "./_components/sections/IntroSection";
+
 import FadeSlideIn from "./_components/effects/FadeSlideIn";
 import Spacer from "@/_components/spacers/Spacer";
-import { AboutData } from "./_data/sample/AboutData";
-import DoubleSection from "./_components/sections/DoubleSection";
-import { partnerAllAction } from "./_data/actions/PartnerActions";
-import HomePage from "./_components/HomePage";
-import { clientAllAction } from "./_data/actions/ClientActions";
-import SliderSecondary from "./_components/sliders/SliderSecondary";
-import SliderDefault from "./_components/sliders/SliderDefault";
 import { PageMetaInterface } from "./_data/entity/PageMetaEntity";
 import { cache } from "react";
 import { pageMetaBySlugAction } from "./_data/actions/PageMetaActions";
 import { Metadata } from "next";
-import { appInfoViewAction, getAppInfo } from "./_data/actions/AppInfoActions";
-import Header from "./_components/headers/Header";
-import Slider from "./_components/sliders/Slider";
-import { AppInfoData } from "./_data/sample/AppInfoData";
-import { ButtonPrimary } from "./_components/buttons/ButtonPrimary";
+import { getAppInfo } from "./_data/actions/AppInfoActions";
 import HomeMainSection from "./_components/HomeMainSection";
 import ContactSection from "./_components/sections/ContactSection";
 

@@ -11,6 +11,7 @@ import ContactPage from './_components/ContactPage'
 import Banner from '../_components/banner/Banner'
 import FadeSlideIn from '../_components/effects/FadeSlideIn'
 import BreadCrumb from '@/_components/breadcrumbs/BreadCrumb'
+import { ContactData } from '../_data/sample/ContactData'
 
 
 
@@ -63,13 +64,15 @@ export default async function page() {
       getAppInfo()
     ]);
 
-  const headerImage = '/assets/img/banner/contact.jpg'
+ 
   
   return (
     <>
     <Banner
-        title='Contact Us'
-        details='Talk to us.' />
+        title={ContactData.title}
+        image={ContactData.image}
+        details={ContactData.subtitle} 
+    />
     <BreadCrumb data={CrumbsData} />
 
     <div className="bg-gray-100">

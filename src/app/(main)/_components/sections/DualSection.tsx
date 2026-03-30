@@ -53,7 +53,7 @@ export default function DualSection({
                             <div className="lg:h-full h-100">
                                 <img 
                                     alt='Image' 
-                                    className="w-full h-full object-contain" 
+                                    className="w-full h-full object-cover" 
                                     src={image ?? NoImage} 
                                 />
                             </div>
@@ -72,7 +72,7 @@ export default function DualSection({
                             <div className="lg:h-full h-100">
                                 <img 
                                     alt='Image' 
-                                    className="w-full h-full object-contain" 
+                                    className="w-full h-full object-cover" 
                                     src={image ?? NoImage} />
                             </div>
                             {/* TEXT */} 

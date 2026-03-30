@@ -21,7 +21,7 @@ export const ServiceData = [
 export const MainNavData: NavInterface[] = [
     {id: 1, name: 'Home', href:'/', isOpen: false, items: []},
     {id: 2, name: 'About Us',  href:'/about', isOpen: false, items: []},
-    {id: 3, name: 'Our Services',  href:'/what-we-do', isOpen: false, items: ServiceData},
+    {id: 3, name: 'Our Services',  href:'/service', isOpen: false, items: []},
     {id: 4, name: 'Contact Us',  href:'/contact', isOpen: false, items: []},
 ]
 

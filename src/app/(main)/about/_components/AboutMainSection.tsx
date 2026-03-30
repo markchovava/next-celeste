@@ -64,14 +64,17 @@ export default function AboutMainSection({
             <Spacer />
             <div className="container__primary grid lg:grid-cols-3 grid-cols-1 gap-24">
                 <CardAbout 
+                    image={AppInfoData.mission.image} 
                     title={AppInfoData.mission.title} 
                     details={AppInfoData.mission.details} 
                 />
                 <CardAbout 
+                    image={AppInfoData.vision.image} 
                     title={AppInfoData.vision.title} 
                     details={AppInfoData.vision.details} 
                 />
                 <CardAbout 
+                    image={AppInfoData.social.image} 
                     title={AppInfoData.social.title} 
                     details={AppInfoData.social.details} 
                 />

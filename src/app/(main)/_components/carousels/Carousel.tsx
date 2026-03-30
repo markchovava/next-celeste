@@ -155,11 +155,14 @@ function Card({
                 />
             </figure>
             <div className='px-3 pt-2 pb-3 h-18'>
-                <Link href={href}> 
+                 <span className='text-gray-600 font-medium pb-[0.5px] leading-0.5'>
+                    {name}
+                </span> 
+               {/*  <Link href={href}> 
                 <span className='text-gray-600 hover:text-blue-800 hover:border-blue-800 font-medium ease-in-out transition-all duration-200 hover:border-b pb-[0.5px] leading-0.5'>
                     {name}
                 </span> 
-                </Link>
+                </Link> */}
             </div>
         </div>
     )

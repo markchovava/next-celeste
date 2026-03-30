@@ -16,6 +16,7 @@ import { toast } from 'react-toastify'
 import { contactStoreAction } from '../../contact/_actions/ContactActions'
 import { useAppInfoStore } from '../../_store/useAppInfoStore'
 import { AppInfoData } from '../../_data/sample/AppInfoData'
+import FadeSlideIn from '../effects/FadeSlideIn'
 
 interface PropInterface{
     withMap?: boolean
@@ -86,82 +87,84 @@ export default function ContactSection({withMap=false}: PropInterface) {
 
   return (
     <>
-    <section className="container__primary mx-auto grid lg:grid-cols-2 grid-cols-1 gap-4">
-        <div className="px-4 lg:mb-0 mb-12">
-            <form onSubmit={handleSubmit}>
-                <TitlePrimary title="Write to us" />
-                <TextInput
-                    name="name"
-                    value={data.name}
-                    label='Name'
-                    type='text' 
-                    placeholder='Enter Name here.'
-                    onChange={setInputValue}
-                    error={errors.name}
-                />
-                <TextInput
-                    name="email"
-                    value={data.email}
-                    label='Email'
-                    type='text' 
-                    placeholder='Enter Email here.'
-                    onChange={setInputValue}
-                    error={errors.email}
-                />
-                <TextArea
-                    name="message"
-                    value={data.message}
-                    label='Message' 
-                    placeholder='Enter Message here.'
-                    onChange={setInputValue}
-                    error={errors.message}
-                />
-                <ButtonPrimary
-                    title="Submit" 
-                    status={isSubmitting}
-                    css='text-lg py-3 px-9 text-white' 
-                />
-            </form>
-        
-        </div>
-        <div className='px-4'>
-            <TitlePrimary title="Visit Us" />
-            <p className='font-light text-lg'>
-                We value our customers and encourage you to visit us during normal business hours 
-                to explore our expert consulting solutions. Whether you're in need of fixed assets labels, fixed assets tags, or 
-                support with fixed assets verification, our team is dedicated to enhancing your operational 
-                efficiency.
-            </p>
-            <SpacerPrimary />
-            <TitleSecondary title={AppInfoData.name} />
-            <ul className='font-light space-y-3 pt-3 pb-4'>
-                {AppInfoData.phone &&
-                    <li className='flex items-center justify-start gap-2 text-lg'>
-                        <IconDefault type='phone' css='text-lg text-blue-700' />
-                        {AppInfoData.phone}
-                    </li>
-                }
-                {AppInfoData.address &&
-                    <li className='flex items-center justify-start gap-2 text-lg'>
-                        <IconDefault type='address' css='text-lg text-blue-700' />
-                        {AppInfoData.address}
-                    </li>
-                }
-            </ul>
-            <SpacerPrimary />
-            <div className='flex flex-wrap items-center justify-start gap-3 mb-2'>
-                {DateTimeData.map((i, key) => (
-                    <CardDate 
-                        key={key} 
-                        day={i.day} 
-                        time={i.time} 
+    <FadeSlideIn slideDirection="up" duration={1500}>
+        <section className="container__primary mx-auto grid lg:grid-cols-2 grid-cols-1 gap-4">
+            <div className="px-4 lg:mb-0 mb-12">
+                <form onSubmit={handleSubmit}>
+                    <TitlePrimary title="Write to us" />
+                    <TextInput
+                        name="name"
+                        value={data.name}
+                        label='Name'
+                        type='text' 
+                        placeholder='Enter Name here.'
+                        onChange={setInputValue}
+                        error={errors.name}
                     />
-                ))}
+                    <TextInput
+                        name="email"
+                        value={data.email}
+                        label='Email'
+                        type='text' 
+                        placeholder='Enter Email here.'
+                        onChange={setInputValue}
+                        error={errors.email}
+                    />
+                    <TextArea
+                        name="message"
+                        value={data.message}
+                        label='Message' 
+                        placeholder='Enter Message here.'
+                        onChange={setInputValue}
+                        error={errors.message}
+                    />
+                    <ButtonPrimary
+                        title="Submit" 
+                        status={isSubmitting}
+                        css='text-lg py-3 px-9 text-white' 
+                    />
+                </form>
+            
             </div>
-            <p className='font-light text-sm'>Closed on all Major Holidays.</p>
+            <div className='px-4'>
+                <TitlePrimary title="Visit Us" />
+                <p className='font-light text-lg'>
+                    We value our customers and encourage you to visit us during normal business hours 
+                    to explore our expert consulting solutions. Whether you're in need of fixed assets labels, fixed assets tags, or 
+                    support with fixed assets verification, our team is dedicated to enhancing your operational 
+                    efficiency.
+                </p>
+                <SpacerPrimary />
+                <TitleSecondary title={AppInfoData.name} />
+                <ul className='font-light space-y-3 pt-3 pb-4'>
+                    {AppInfoData.phone &&
+                        <li className='flex items-center justify-start gap-2 text-lg'>
+                            <IconDefault type='phone' css='text-lg text-blue-700' />
+                            {AppInfoData.phone}
+                        </li>
+                    }
+                    {AppInfoData.address &&
+                        <li className='flex items-center justify-start gap-2 text-lg'>
+                            <IconDefault type='address' css='text-lg text-blue-700' />
+                            {AppInfoData.address}
+                        </li>
+                    }
+                </ul>
+                <SpacerPrimary />
+                <div className='flex flex-wrap items-center justify-start gap-3 mb-2'>
+                    {DateTimeData.map((i, key) => (
+                        <CardDate 
+                            key={key} 
+                            day={i.day} 
+                            time={i.time} 
+                        />
+                    ))}
+                </div>
+                <p className='font-light text-sm'>Closed on all Major Holidays.</p>
 
-        </div>
-    </section>
+            </div>
+        </section>
+    </FadeSlideIn>
 
     <Spacer />
     {withMap &&

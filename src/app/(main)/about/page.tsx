@@ -13,6 +13,7 @@ import Spacer from '@/_components/spacers/Spacer'
 import ContactSection from '../_components/sections/ContactSection'
 import Banner from '../_components/banner/Banner'
 import BreadCrumb from '@/_components/breadcrumbs/BreadCrumb'
+import { AppInfoData } from '../_data/sample/AppInfoData'
 
 
 
@@ -71,8 +72,9 @@ export default async function page() {
   return (
     <div className='bg-white'>
       <Banner 
-        title='About Us'
-        details='Know more about us.' />
+        image={AppInfoData.about.image}
+        title={AppInfoData.about.title}
+        details={AppInfoData.about.subtitle} />
       <BreadCrumb data={CrumbsData} />
       
 

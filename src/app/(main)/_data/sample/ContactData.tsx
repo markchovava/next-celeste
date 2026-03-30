@@ -7,3 +7,9 @@ export const DateTimeData = [
     {id: 1, day: 'Sat', time: '08:00 - 17:00'},
     {id: 1, day: 'Sun', time: 'Closed'},
 ]
+
+export const ContactData = {
+    image: '/assets/img/banner/09.jpg',
+    title: 'Contact Us',
+    subtitle: 'Talk to us.'
+}

@@ -26,12 +26,14 @@ export default function Banner({
                     </p>
                 </div>
                 {/*  */}
-                <div className="h-90 lg:order-2 order-1 overflow-hidden">
-                    <img 
+                <div 
+                    style={{ backgroundImage: `url(${image})`}} 
+                    className="h-90 w-full bg__parallax lg:order-2 order-1 overflow-hidden">
+                    {/* <img 
                         alt='Image' 
-                        className="w-full h-full object-contain object-center" 
+                        className="w-full h-full object-cover object-center" 
                         src={image} 
-                    />
+                    /> */}
                 </div>
             </div>
         </section>

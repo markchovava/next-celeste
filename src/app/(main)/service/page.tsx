@@ -4,6 +4,7 @@ import ServiceMainSection from './_components/ServiceMainSection'
 import FadeSlideIn from '../_components/effects/FadeSlideIn'
 import Spacer from '@/_components/spacers/Spacer'
 import ContactSection from '../_components/sections/ContactSection'
+import { ServiceInfoData } from '../_data/sample/ServiceData'
 
 
 
@@ -16,8 +17,9 @@ export default function page() {
   return (
     <>
     <Banner
-        title='Our Services'
-        details='Talk to us.' />
+        title={ServiceInfoData.title}
+        image={ServiceInfoData.image}
+        details={ServiceInfoData.subtitle} />
     <BreadCrumb data={CrumbsData} />
 
     <ServiceMainSection />

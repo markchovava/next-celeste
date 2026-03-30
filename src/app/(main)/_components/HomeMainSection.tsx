@@ -1,6 +1,6 @@
 "use client"
 
-import { ButtonPrimary } from "./buttons/ButtonPrimary"
+
 import Spacer from "./spacers/Spacer"
 import FadeSlideIn from "./effects/FadeSlideIn"
 import CardAbout from "./cards/CardAbout"
@@ -9,11 +9,14 @@ import CardAbout2 from "./cards/CardAbout2"
 import DualSection from "./sections/DualSection"
 import { ServiceInfoData } from "../_data/sample/ServiceData"
 import Carousel from "./carousels/Carousel"
-import ContactSection from "./sections/ContactSection"
 import { useAppInfoStore } from "../_store/useAppInfoStore"
 import { useEffect } from "react"
-import Title from "./titles/Title"
 import BannerHero from "./banner/BannerHero"
+import Title from "./titles/Title"
+import TitleSecondary from "./titles/TitleSecondary"
+import TitlePrimary from "./titles/TitlePrimary"
+import { ButtonPrimary } from "./buttons/ButtonPrimary"
+import Link from "next/link"
 
 
 interface PropInterface{
@@ -42,6 +45,7 @@ export default function HomeMainSection({
     <DualSection direction="left" 
         title={AppInfoData.about.title} 
         details={AppInfoData.about.intro} 
+        image={AppInfoData.about.image}
         href="/about"
         btnTitle="View More" />
 
@@ -50,14 +54,17 @@ export default function HomeMainSection({
             <Spacer />
             <div className="container__primary grid lg:grid-cols-3 grid-cols-1 gap-24">
                 <CardAbout 
+                    image={AppInfoData.mission.image}
                     title={AppInfoData.mission.title} 
                     details={AppInfoData.mission.details} 
                 />
-                <CardAbout 
+                <CardAbout
+                    image={AppInfoData.vision.image} 
                     title={AppInfoData.vision.title} 
                     details={AppInfoData.vision.details} 
                 />
                 <CardAbout 
+                    image={AppInfoData.social.image}
                     title={AppInfoData.social.title} 
                     details={AppInfoData.social.details} 
                 />
@@ -91,6 +98,7 @@ export default function HomeMainSection({
      {/*  */}
     <DualSection 
         direction="right" 
+        image={ServiceInfoData.image}
         title={ServiceInfoData.title}
         details={ServiceInfoData.intro} 
         href="/service"
@@ -98,13 +106,24 @@ export default function HomeMainSection({
     />
 
     <section className="w-full">
-        <Spacer />
-        <div className="container__primary">
-            <Carousel 
-                data={ServiceInfoData.services} 
-            />
-        </div>
-        <Spacer />
+        <FadeSlideIn slideDirection="up" duration={1500}>
+            <Spacer />
+            <div className="container__primary">
+                <div className="flex items-center justify-between mb-4">
+                    <TitlePrimary title={ServiceInfoData.title} />
+                    <Link href={ServiceInfoData.href}>
+                        <button className={`cursor-pointer font-medium border-b-4 border-transparent border-dotted 
+                            hover:text-blue-700 hover:border-b-blue-700 pb-0.5`}>
+                            View More
+                        </button>
+                    </Link>
+                </div>
+                <Carousel 
+                    data={ServiceInfoData.services} 
+                />
+            </div>
+            <Spacer />
+        </FadeSlideIn>
     </section>
 
 
