@@ -9,6 +9,7 @@ export default function SocialNav() {
         {SocialData.map((i, key) => (
             <Link 
                 key={key} 
+                target='_blank'
                 href={i.href}>
                 <IconDefault
                     type={i.name} 
