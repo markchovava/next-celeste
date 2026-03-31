@@ -82,7 +82,7 @@ export default async function page() {
         </FadeSlideIn>
     </div>
 
-    <FooterDefault />
+
     </>
   )
 }
