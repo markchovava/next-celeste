@@ -9,8 +9,11 @@ import Header from "./(main)/_components/headers/Header";
 
 export const metadata: Metadata = {
   title: "Celeste Energy",
-  description: "Celeste Energy",
-  keywords: ["Celeste Energy",],
+  description: "We are dedicated to harnessing the power of the sun to provide sustainable energy solutions.",
+  keywords: ["Celeste Energy", 'solar energy', 'irrigation', 'borehole'],
+  verification: {
+    google: 'uzEnE4Z0slrSXHljnm7EKx2ZivfC8FgjZVlFUFXPGUY',
+  },
 };
 
 export default function RootLayout({
