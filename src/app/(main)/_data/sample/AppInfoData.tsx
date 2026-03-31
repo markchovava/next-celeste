@@ -1,8 +1,8 @@
 export const AppInfoData = {
     name: 'Celeste Energy',
-    phone: '+263 798 666676 | +263 775 129645',
-    address: '14 Mayo Place, Eastlea, Harare',
-    email: 'sales@celeste.co.zw',
+    phone: '+263 774 434071',
+    address: '62 Palmer Rd, Milton Park, Harare',
+    email: 'sales@celesteenergy.co.zw',
     about: {
         image: '/assets/img/banner/08.jpg',
         subtitle: 'Who we are?',

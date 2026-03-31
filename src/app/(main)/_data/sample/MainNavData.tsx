@@ -50,8 +50,8 @@ export const FooterData: NavInterface[] = [
 
 
 export const SocialData: NavInterface[] = [
-    {id: 1, name: 'facebook', href:'#', isOpen: false, css: 'text-blue-600', items: []},
-    {id: 2, name: 'whatsapp', href:'#', css: 'text-green-600', isOpen: false, items: []},
+    {id: 1, name: 'facebook', href:'https://www.facebook.com/celesteenergyzw', isOpen: false, css: 'text-blue-600', items: []},
+    {id: 2, name: 'whatsapp', href:'https://www.instagram.com/celesteenergyzw', css: 'text-green-600', isOpen: false, items: []},
     {id: 3, name: 'linkedin', href:'#', css: 'text-blue-800', isOpen: false, items: []},
     {id: 4, name: 'twitter', href:'#', css: 'text-black', isOpen: false, items: []},
     {id: 5, name: 'instagram', href:'#', css: 'text-pink-600', isOpen: false, items: []},
