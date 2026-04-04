@@ -12,6 +12,7 @@ import Banner from '../_components/banner/Banner'
 import FadeSlideIn from '../_components/effects/FadeSlideIn'
 import BreadCrumb from '@/_components/breadcrumbs/BreadCrumb'
 import { ContactData } from '../_data/sample/ContactData'
+import BannerPrimary from '../_components/banner/BannerPrimary'
 
 
 
@@ -68,7 +69,7 @@ export default async function page() {
   
   return (
     <>
-    <Banner
+    <BannerPrimary
         title={ContactData.title}
         image={ContactData.image}
         details={ContactData.subtitle} 

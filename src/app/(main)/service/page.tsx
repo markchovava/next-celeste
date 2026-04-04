@@ -5,6 +5,7 @@ import FadeSlideIn from '../_components/effects/FadeSlideIn'
 import Spacer from '@/_components/spacers/Spacer'
 import ContactSection from '../_components/sections/ContactSection'
 import { ServiceInfoData } from '../_data/sample/ServiceData'
+import BannerPrimary from '../_components/banner/BannerPrimary'
 
 
 
@@ -16,10 +17,11 @@ const CrumbsData = [
 export default function page() {
   return (
     <>
-    <Banner
-        title={ServiceInfoData.title}
-        image={ServiceInfoData.image}
-        details={ServiceInfoData.subtitle} />
+    <BannerPrimary
+      title={ServiceInfoData.title}
+      image={ServiceInfoData.image}
+      details={ServiceInfoData.subtitle}
+    />
     <BreadCrumb data={CrumbsData} />
 
     <ServiceMainSection />

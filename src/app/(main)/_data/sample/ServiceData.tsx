@@ -2,7 +2,7 @@ import { NoImage } from "@/_data/sample/NoImage"
 
 
 export const ServiceInfoData = {
-    image: '/assets/img/banner/10.jpg',
+    image: '/assets/img/services/00.jpg',
     href: '/service',
     title: 'Our Services',
     subtitle: 'What we do?',
@@ -22,7 +22,7 @@ export const ServiceInfoData = {
             id: 1, 
             name: 'Residential Solar Installation', 
             slug: 'residential-solar-installation',
-            image: `/assets/img/services/07.jpg`,
+            image: `/assets/img/services/03_solar.jpg`,
             href: '/service/residential-solar-installation',
         },
         { 
@@ -41,17 +41,17 @@ export const ServiceInfoData = {
         },
         { 
             id: 4, 
-            name: 'Water Purification', 
-            slug: 'water-purification',
-            image: `/assets/img/services/16.jpg`,
-            href: '/service/solar-borehole-installation',
+            name: 'Biogas Digester', 
+            slug: 'biogas-digester',
+            image: `/assets/img/services/01_digester.jpg`,
+            href: '/service/biogas-digester',
         },
         { 
             id: 5, 
-            name: 'Storage & Distribution', 
-            slug: 'storage-and-distribution',
-            image: `/assets/img/services/15.jpg`,
-            href: '/service/storage-and-distribution',
+            name: 'Biogas Stove', 
+            slug: 'biogas-stove',
+            image: `/assets/img/services/02_stove.jpg`,
+            href: '/service/biogas-stove',
         },
         { 
             id: 6, 

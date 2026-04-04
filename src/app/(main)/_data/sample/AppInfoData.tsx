@@ -4,7 +4,7 @@ export const AppInfoData = {
     address: '62 Palmer Rd, Milton Park, Harare',
     email: 'sales@celesteenergy.co.zw',
     about: {
-        image: '/assets/img/banner/08.jpg',
+        image: '/assets/img/banner/01.jpg',
         subtitle: 'Who we are?',
         title: 'About Us',
         intro: <>
