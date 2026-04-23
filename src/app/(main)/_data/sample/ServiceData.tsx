@@ -57,7 +57,7 @@ export const ServiceInfoData = {
             id: 6, 
             name: 'Irrigation', 
             slug: 'irrigation',
-            image: `/assets/img/services/09.jpg`,
+            image: `/assets/img/services/05_irrigation.jpg`,
             href: '/service/irrigation',
         }
     ]
