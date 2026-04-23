@@ -69,7 +69,7 @@ export const AboutData = {
             drive sustainable growth for our clients.`,  
     },
     vision: {
-        image: '/assets/img/about/02_about.jpg',
+        image: '/assets/img/services/03_solar.jpg',
         title: 'Our Vision',
         details: ` To be the regional hub of excellence in the deployment and delivery of unique 
             expert consulting solutions, including fixed assets labels, fixed assets tags, 

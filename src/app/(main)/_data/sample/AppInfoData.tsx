@@ -44,7 +44,7 @@ export const AppInfoData = {
         ]
     },
     mission: {
-        image: '/assets/img/02.jpg',
+        image: '/assets/img/07.jpg',
         title: 'Our Mission',
         details: <>
             To provide accessible, reliable, and Mission sustainable energy 
@@ -53,7 +53,7 @@ export const AppInfoData = {
         </>
     },
     vision: {
-        image: '/assets/img/03.jpg',
+        image: '/assets/img/services/03_solar.jpg',
         title: 'Our Vision',
         details: <>
             To be the leading catalyst for clean energy adoption globally, ensuring 
