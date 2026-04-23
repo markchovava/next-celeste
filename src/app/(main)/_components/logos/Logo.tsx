@@ -11,7 +11,10 @@ export default function Logo({size = 'w-auto h-16'}: PropInterface) {
   return (
     <Link href={LogoData.href}>
         <figure className={`${size}`}>
-          <img src={LogoData.image} alt='Logo' className="w-full h-full object-fit" />
+          <img 
+            src={LogoData.image} 
+            alt='Logo' 
+            className="w-auto h-16" />
       </figure>
     </Link>
   )

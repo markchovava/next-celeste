@@ -89,7 +89,7 @@ export default function HomeMainSection({
                         type={key % 2 === 0 ? 'on' : 'off'} 
                         title={i.title} 
                         details={i.details} />
-                ))}   
+                ))} 
             </div>
             <Spacer />
         </FadeSlideIn>
