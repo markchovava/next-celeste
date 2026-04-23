@@ -44,7 +44,7 @@ export const AppInfoData = {
         ]
     },
     mission: {
-        image: '/assets/img/07.jpg',
+        image: '/assets/img/services/01_borehole_solar.jpg',
         title: 'Our Mission',
         details: <>
             To provide accessible, reliable, and Mission sustainable energy 
@@ -61,7 +61,7 @@ export const AppInfoData = {
         </>,
     },
     social: {
-        image: '/assets/img/04.jpg',
+        image: '/assets/img/services/01_tanks.jpg',
         title: 'Social Responsibility',
         details: <>
             Uplifting communities through Responsibility accessible energy and water.

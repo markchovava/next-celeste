@@ -2,7 +2,7 @@ import { NoImage } from "@/_data/sample/NoImage"
 
 
 export const ServiceInfoData = {
-    image: '/assets/img/services/00.jpg',
+    image: '/assets/img/banner/01_solar.jpg', 
     href: '/service',
     title: 'Our Services',
     subtitle: 'What we do?',
@@ -22,21 +22,21 @@ export const ServiceInfoData = {
             id: 1, 
             name: 'Residential Solar Installation', 
             slug: 'residential-solar-installation',
-            image: `/assets/img/services/03_solar.jpg`,
+            image: `/assets/img/services/07.jpg`,
             href: '/service/residential-solar-installation',
         },
         { 
             id: 2, 
             name: 'Commercial Solar Installation', 
             slug: 'commercial-solar-installation',
-            image: `/assets/img/services/13.jpg`,
+            image: `/assets/img/services/00_solar.jpg`,
             href: '/service/commercial-solar-installation',
         },
         { 
             id: 3, 
             name: 'Solar Borehole Installation', 
             slug: 'solar-borehole-installation',
-            image: `/assets/img/services/03.jpg`,
+            image: `/assets/img/services/01_borehole_solar.jpg`,
             href: '/service/solar-borehole-installation',
         },
         { 
