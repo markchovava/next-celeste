@@ -11,7 +11,7 @@ export default function LogoDefault({css='h-16'}: PropInterface) {
   return (
     <Link href='/'>
       <figure className={`${css} w-auto overflow-hidden bg-white rounded drop-shadow-lg`}>
-          <img src='/assets/img/logo/logo_small.png' alt='' className="w-full h-full object-fit" />
+          <img src='/assets/img/logo/logo_small.png' alt='' className="w-auto h-16" />
       </figure>
     </Link>
   )
